@@ -9,7 +9,7 @@ import java.util.*;
 public class HuvudProgram{
 
 
- HuvudProgram() {                            //när huvudprogram konstruktorn körs, körs mesta av vår kod / program
+ HuvudProgram() {                            //när huvudprogram konstruktorn körs, körs mesta av vår "kod / program"
 
      ArrayList<Plantor> plantLista = new ArrayList<>();
 
@@ -51,7 +51,8 @@ public class HuvudProgram{
 
  }
 
-    public static void main(String[] args) {   //programmet startar alltid i main metoden, men den har inte åtkomst till HuvudProgram klassens variabler eller metoder!
+    //programmet startar alltid i main metoden, men den har inte åtkomst till icke-statiska variabler eller metoderna i klassen den befinner sig i, om inte en instans av klassen skapas upp
+    public static void main(String[] args) {
 
 
         HuvudProgram main = new HuvudProgram();         //skapar upp instans av klassen huvudprogram, bryter sig ur statisk kontext!
