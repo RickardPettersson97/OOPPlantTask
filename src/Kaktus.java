@@ -6,7 +6,13 @@ public class Kaktus extends Plantor {
 
     private final int kaktusVätskaCl = 2;           //final för den ändras aldrig, gjorde specifik variabel för kaktus
 
-    protected PlantEnum vatten = PlantEnum.MINERALVATTEN;
+    private PlantEnum vatten = PlantEnum.MINERALVATTEN;
+
+    //inkapsling av vatten variabeln
+    public PlantEnum getVatten() {
+        return vatten;
+    }
+
 
 
     public Kaktus (double höjdMeter, String namn) {               //konstruktor
@@ -20,6 +26,6 @@ public class Kaktus extends Plantor {
 
     @Override
     public void PrintVätska() {
-        JOptionPane.showMessageDialog(null, this.getName() + " behöver " + this.kaktusVätskaCl + " cl " + this.vatten.vattenTyp + " per dag");
+        JOptionPane.showMessageDialog(null, this.getName() + " behöver " + this.kaktusVätskaCl + " cl " + this.getVatten().vattenTyp + " per dag");
     }
 }

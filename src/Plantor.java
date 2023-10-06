@@ -7,6 +7,7 @@ abstract public class Plantor implements Vätska {              //abstrakt pga f
 
     //getter för Vätskebehov, den är inkapslad och man måste anropa getVätskebehov för att få värdet
     public double getVätskebehov() {
+
         return vätskebehov;
     }
 

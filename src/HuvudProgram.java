@@ -9,7 +9,7 @@ import java.util.*;
 public class HuvudProgram{
 
 
- HuvudProgram() {                            //när huvudprogram konstruktorn körs, körs själva "programmet"
+ HuvudProgram() {                            //när huvudprogram konstruktorn körs, körs mesta av vår kod / program
 
      ArrayList<Plantor> plantLista = new ArrayList<>();
 

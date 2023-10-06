@@ -3,8 +3,12 @@ import javax.swing.*;
 public class KöttätandeVäxt extends Plantor {
 
 
-    protected PlantEnum vatten = PlantEnum.PROTEINDRICKA;
+    private PlantEnum vatten = PlantEnum.PROTEINDRICKA;
 
+    //inkapsling
+    public PlantEnum getVatten() {
+        return vatten;
+    }
 
     public KöttätandeVäxt(double höjdMeter, String namn){       //konstruktor
       super(höjdMeter,namn);
@@ -17,7 +21,7 @@ public class KöttätandeVäxt extends Plantor {
 
     @Override
     public void PrintVätska() {
-        JOptionPane.showMessageDialog(null, this.getName()+ " behöver " + String.format("%.2f", this.getVätskebehov()) + " liter " + this.vatten.vattenTyp + " per dag");
+        JOptionPane.showMessageDialog(null, this.getName()+ " behöver " + String.format("%.2f", this.getVätskebehov()) + " liter " + this.getVatten().vattenTyp + " per dag");
     }
 }
 
