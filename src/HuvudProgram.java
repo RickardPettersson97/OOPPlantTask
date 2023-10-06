@@ -1,8 +1,11 @@
 import javax.swing.*;
 import java.util.*;
 
-
-
+/** egna reflektioner: gillade uppgiften, men känner själv att jag kanske borde ha haft lite mindre kod i HuvudProgram konstruktorn... kanske lagt till en extra klass där jag hanterar input?
+ * funderade på att göra en metod i superklassen Plantor som printade ut texten, istället för att ha den i varje subklass (känns lite repetivt) men beslutade att spara som den är!
+ * hade originellt vätskebehov variabeln i varje subklass i sig, men gjorde om det till en variabel i superklassen. Förutom i Kakatus pga det är en final variabel som är 2, den ändras ju inte beroende på storlek!
+ * hade ett jätte intressant problem om meatloaf hade varit 0.4 meter hög, hittade det genom tester... om man inte hade string formatet till 2 decimaler hade det stått ungefär 0.18000000000000002 liter
+*/
 public class HuvudProgram{
 
 
