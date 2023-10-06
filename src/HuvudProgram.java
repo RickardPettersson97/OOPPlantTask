@@ -48,7 +48,7 @@ public class HuvudProgram{
 
  }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {   //programmet startar alltid i main metoden, men den har inte åtkomst till HuvudProgram klassens variabler eller metoder!
 
 
         HuvudProgram main = new HuvudProgram();         //skapar upp instans av klassen huvudprogram, bryter sig ur statisk kontext!
